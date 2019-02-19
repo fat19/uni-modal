@@ -76,11 +76,11 @@ modal.close()
 Width options hem string hemde object bir değer alabilir.
 * Sabit bir width değeri verilerek tüm cihazlarda aynı genişlikte olması sağlanabilir. Örneğin;
 ```
-widdth: '500px'
+width: '500px'
 ```
 * width bir obje olarak da tanımlanabilir. Width objesi mobile ve desktop adında iki farklı değer alır. 1200px in altında mobile için geçerli değer çalışırken, 1200px yukarısında ise desktop içine yazılmış olan değer çalışır.   
 ```
-widdth: {
+width: {
     mobile: '80%',
     desktop: '300px'
 }

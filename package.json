@@ -1,5 +1,5 @@
 {
-  "name": "uni-modal",
+  "name": "uni-modal-pure-js",
   "version": "1.0.0",
   "description": "Pure Javascript Modal Plugin",
   "main": "modal.js",
