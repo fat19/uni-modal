@@ -1,0 +1,126 @@
+/* Modal Base CSS */
+.modal-body-fixed {
+   overflow: hidden !important;
+}
+
+.modal-overlay {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    -webkit-transition: 500ms opacity 300ms ease;
+       -moz-transition: 500ms opacity 300ms ease;
+        -ms-transition: 500ms opacity 300ms ease;
+         -o-transition: 500ms opacity 300ms ease;
+            transition: 500ms opacity 300ms ease;
+}
+
+.modal {
+    position: fixed;
+    z-index: 9999;
+    left: 50vw;
+    top: 50vh;
+    opacity: 0;
+    max-height: 80vh;
+    -webkit-transition: 300ms opacity 300ms ease;
+       -moz-transition: 300ms opacity 300ms ease;
+        -ms-transition: 300ms opacity 300ms ease;
+         -o-transition: 300ms opacity 300ms ease;
+            transition: 300ms opacity 300ms ease;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.modal-inner {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   overflow-y: overlay;
+   max-height: 80vh;
+}
+
+.modal .close-modal {
+  position: absolute;
+   top: -15px;
+   right: -25px;
+   font-size: 21px;
+   color: #ffffff;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.modal-body {
+   padding: 20px;
+}
+
+/* Default Modal Open */
+.modal.modal-open {
+    opacity: 1;
+}
+
+.modal-overlay.modal-open {
+    opacity: 1;
+    -webkit-transition: 300ms opacity ease;
+       -moz-transition: 300ms opacity ease;
+        -ms-transition: 300ms opacity ease;
+         -o-transition: 300ms opacity ease;
+            transition: 300ms opacity ease;
+}
+
+
+/* With Animation Modal Open */
+/* Default Animation */
+.modal.fade-and-drop {
+   top: -100%;
+   opacity: 1;
+   display: block;
+   -webkit-transition: 500ms top ease;
+      -moz-transition: 500ms top ease;
+       -ms-transition: 500ms top ease;
+        -o-transition: 500ms top ease;
+           transition: 500ms top ease;
+}
+
+.modal.fade-and-drop.modal-open {
+    opacity: 1;
+    top: 50vh;
+    -webkit-transition: 500ms top 500ms ease;
+       -moz-transition: 500ms top 500ms ease;
+        -ms-transition: 500ms top 500ms ease;
+         -o-transition: 500ms top 500ms ease;
+            transition: 500ms top 500ms ease;
+}
+
+/* modal custom scrollbar*/
+.modal .modal-inner::-webkit-scrollbar{
+	width: 14px;
+    background-color: transparent;
+    border-left: 1px solid #ddd;
+}
+.modal .modal-inner::-webkit-scrollbar-thumb{
+	background-color: #868686;
+	border-radius: 10px;
+    box-shadow: inset 0 0 6px #8686868c;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+.modal .modal-inner::-webkit-scrollbar-track{
+    background-color: #96969621;
+    border-radius: 10px;
+}
+.modal .modal-inner::-webkit-scrollbar-track-piece{
+	height: 5px;
+}
+
+
