@@ -7,19 +7,17 @@ Pure Javascript Modal Plugin
 Herhangi bir gereksinime ihtiyaç duymamaktadır.
 
 
-### Yükleme(Installing)
+### Yükleme
 
 1-Npm Kullanarak
 
 ```
-npm install uni-modal
+npm install uni-modal-pure-js
 ```
 
 2- Direk indirme yöntemiyle bu adresten indirebilirsiniz. https://github.com/fat19/uni-modal
 
-### Kullanım(Usage)
-
-Explain what these tests test and why
+### Kullanım
 
 Sayfaya modal.js i çağırma 
 ```
